@@ -83,6 +83,7 @@ You install this framework by simply importing **'steper.scss'** into your main 
    * ```nav-m``` - adds the medium size to the navbar
    * ```nav-l``` - adds the large size to the navbar
    * ```nav-xl``` - adds the extra large size to the navbar
+   * ```logo``` - adds  the Header text and puts it into place (doesn't need to be text)
    
    #
    
