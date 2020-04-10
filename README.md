@@ -1,5 +1,5 @@
 # STEPER.CSS
-This is an little "framework" I made for myself for my future work. 
+This is a little "framework" I made for myself for my future work. 
 
 Who knows maybe something will be out of this. 🤩
 
