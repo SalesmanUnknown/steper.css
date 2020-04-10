@@ -3,6 +3,8 @@ This is a little "framework" I made for myself for my future work.
 
 Who knows maybe something will be out of this. 🤩
 
+This framework is written with SASS.
+
 # How to install?
 
 You install this framework by simply importing **'steper.scss'** into your main style.cs
@@ -15,6 +17,10 @@ You install this framework by simply importing **'steper.scss'** into your main 
 
 - buttons
 - nav-bar
+- cards
+- text-styles
+
+#
 
 ### Buttons:
 
@@ -26,7 +32,7 @@ You install this framework by simply importing **'steper.scss'** into your main 
 
 #
 
-  ## Buttons are used like this:
+  #### Buttons are used like this:
   
   
   ```
@@ -87,7 +93,7 @@ You install this framework by simply importing **'steper.scss'** into your main 
    
    #
    
-   ## Default navbar is used like this:
+   #### Default navbar is used like this:
    
    ```
    <header class="nav">
@@ -103,3 +109,125 @@ You install this framework by simply importing **'steper.scss'** into your main 
     </header>
    ```
    
+   #
+   
+   ### Cards:
+   
+   * ```card-body``` - adds the card body with default width and height
+   * ```card-title``` - adds the cards title
+   * ```card-content``` - adds the cards content section for text, etc..
+   * ```card-primary``` - colors the card to primary color 
+   * ```card-light``` - colors the card to light color
+   * ```card-danger``` - colors the card to danger color
+   * ```card-success``` - colors the card to success color 
+   
+   #
+   
+   #### Card example: 
+   
+   ```
+   <div class="card-body card-danger">
+      <div class="card-title">
+        I am a title text
+      </div>
+      <div class="card-content">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+          fugiat. Praesentium neque eius doloremque cum debitis dolore vitae,
+          iusto tenetur laborum labore pariatur ipsam, sed iste officiis, omnis
+          voluptate numquam. Lorem ipsum dolor sit amet consectetur adipisicing
+        </p>
+
+        <br />
+
+        <div class="btn btn-light">
+          <a href="#">Button</a>
+        </div>
+        <div class="btn btn-light">
+          <a href="#">Button</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card-body card-success">
+      <div class="card-title">
+        I am a title text
+      </div>
+      <div class="card-content">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+          fugiat. Praesentium neque eius doloremque cum debitis dolore vitae,
+          iusto tenetur laborum labore pariatur ipsam, sed iste officiis, omnis
+          voluptate numquam. Lorem ipsum dolor sit amet consectetur adipisicing
+        </p>
+
+        <br />
+
+        <div class="btn btn-light">
+          <a href="#">Button</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card-body card-primary">
+      <div class="card-title">
+        I am a title text
+      </div>
+      <div class="card-content">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+          fugiat. Praesentium neque eius doloremque cum debitis dolore vitae,
+          iusto tenetur laborum labore pariatur ipsam, sed iste officiis, omnis
+          voluptate numquam. Lorem ipsum dolor sit amet consectetur adipisicing
+        </p>
+
+        <br />
+
+        <div class="btn btn-light">
+          <a href="#">Button</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card-body card-light">
+      <div class="card-title">
+        I am a title text
+      </div>
+      <div class="card-content">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+          fugiat. Praesentium neque eius doloremque cum debitis dolore vitae,
+          iusto tenetur laborum labore pariatur ipsam, sed iste officiis, omnis
+          voluptate numquam. Lorem ipsum dolor sit amet consectetur adipisicing
+        </p>
+
+        <br />
+
+        <div class="btn btn-primary">
+          <a href="#">Button</a>
+        </div>
+      </div>
+    </div>
+   
+   ```
+   
+   #
+   
+   ### Text-styles:
+   
+   * ```xl``` - adds the extra large size to the text
+   * ```l``` - adds the large size to the text
+   * ```m``` - adds the medium size to the text
+   * ```sm``` - adds the small size to the text
+   
+   #
+   
+   #### Text-styles are used like this:
+
+  ```
+    <h1 class="xl">I am dummy text</h1>
+    <h1 class="l">I am dummy text</h1>
+    <h1 class="m">I am dummy text</h1>
+    <h1 class="sm">I am dummy text</h1>
+   
+   ```
