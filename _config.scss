@@ -13,6 +13,14 @@ $success: #25a827;
   }
 }
 
+@function getBorderColor($col) {
+  @if (lightness($col) > 60) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
 @mixin setBackground($col) {
   background-color: $col;
   color: setText($col);
@@ -24,6 +32,15 @@ $success: #25a827;
     background-color: lighten($col, 5);
   }
   transition: 0.5s ease;
+}
+
+@mixin setBackgroundCard($col) {
+  background-color: $col;
+  color: setText($col);
+
+  .card-title {
+    border-color: getBorderColor($col);
+  }
 }
 
 @mixin setNavColors($col) {

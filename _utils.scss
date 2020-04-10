@@ -143,3 +143,43 @@ header {
     }
   }
 }
+
+//cards
+.card-body {
+  display: inline-block;
+  width: 280px; //initial size
+  min-height: 250px; //initial size
+  border-radius: 15px;
+  flex-direction: column;
+  text-align: center;
+  color: #333;
+
+  @include setBackgroundCard($light);
+
+  &.card-primary {
+    @include setBackgroundCard($primary);
+  }
+
+  &.card-light {
+    @include setBackgroundCard($light);
+  }
+
+  &.card-success {
+    @include setBackgroundCard($success);
+  }
+
+  &.card-danger {
+    @include setBackgroundCard($danger);
+  }
+
+  .card-title {
+    padding: 20px;
+    border-bottom: 1px solid rgb(116, 116, 116);
+    font-size: 1.7rem;
+  }
+
+  .card-content {
+    padding: 20px;
+    font-size: 1rem;
+  }
+}
