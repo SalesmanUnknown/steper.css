@@ -26,6 +26,34 @@ $success: #25a827;
   transition: 0.5s ease;
 }
 
+@mixin setNavColors($col) {
+  @if ($col != 0) {
+    background-color: $col;
+    color: setText($col);
+
+    border-bottom: 2px solid rgba($color: #303030, $alpha: 0.6);
+    a {
+      color: setText($col);
+      text-decoration: none;
+      transition: 0.5s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  } @else {
+    border: none;
+    a {
+      color: setText($light);
+      text-decoration: none;
+      transition: 0.5s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
 //padding and margins
 $spaceamounts: (1, 2, 3, 4, 5);
 
