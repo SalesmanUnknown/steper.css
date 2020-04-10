@@ -11,7 +11,12 @@ You install this framework by simply importing **'steper.scss'** into your main 
 
 # Current work
 
-Until now you have only button classes you can use.
+## Until now you have: 
+
+- buttons
+- nav-bar
+
+### Buttons:
 
 * ```btn```  - creates a default light colored button
 * ```btn-primary``` - creates a primary colored button
@@ -65,3 +70,35 @@ Until now you have only button classes you can use.
       <a href="#">Danger rounded</a>
     </div>
    ```
+   #
+   
+   ### Nav-bar:
+   
+   * ```nav``` - adds the default colored navbar feature
+   * ```nav-primary``` - adds the primary colored navbar feature
+   * ```nav-success``` - adds the success colored navbar feature
+   * ```nav-danger``` - adds the danger colored navbar feature
+   * ```nav-light``` - adds the light colored navbar feature
+   * ```nav-sm``` - adds the small size to the navbar
+   * ```nav-m``` - adds the medium size to the navbar
+   * ```nav-l``` - adds the large size to the navbar
+   * ```nav-xl``` - adds the extra large size to the navbar
+   
+   #
+   
+   ## Default navbar is used like this:
+   
+   ```
+   <header class="nav">
+      <div class="logo">
+        <h1>Logo</h1>
+      </div>
+
+      <ul>
+        <li><a href="#">Item #1</a></li>
+        <li><a href="#">Item #2</a></li>
+        <li><a href="#">Item #3</a></li>
+      </ul>
+    </header>
+   ```
+   
