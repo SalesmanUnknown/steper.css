@@ -1,0 +1,57 @@
+//reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//body
+body {
+  font-family: sans-serif;
+}
+
+//text styles
+.xl {
+  font-size: 5rem;
+}
+
+.l {
+  font-size: 3rem;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+//buttons
+
+.btn {
+  @include setBackground($light);
+  display: inline-block;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+
+  &.round {
+    border-radius: 8px;
+  }
+
+  &:hover {
+    background-color: lighten($light, 1);
+  }
+
+  &.btn-primary {
+    @include setBackground($primary);
+  }
+  &.btn-light {
+    @include setBackground($light);
+  }
+  &.btn-danger {
+    @include setBackground($danger);
+  }
+  &.btn-success {
+    @include setBackground($success);
+  }
+}

@@ -1,0 +1,59 @@
+//colors
+$primary: #1ca4ff;
+$light: #e6e6e6;
+$danger: #bf3b34;
+$success: #25a827;
+
+//functions
+@function setText($col) {
+  @if (lightness($col) > 60) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin setBackground($col) {
+  background-color: $col;
+  color: setText($col);
+  a {
+    color: setText($col);
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: lighten($col, 5);
+  }
+  transition: 0.5s ease;
+}
+
+//padding and margins
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  // all around margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  //y axis margin
+  .my-#{$space} {
+    margin: #{space}rem 0;
+  }
+
+  //x axis margin
+  .mx-#{$space} {
+    margin: 0 #{space};
+  }
+
+  //all around padding
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  //y axis padding
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  //x axis padding
+  .px-#{$space} {
+    padding: 0 #{space};
+  }
+}
